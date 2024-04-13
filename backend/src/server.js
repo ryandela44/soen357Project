@@ -1,14 +1,16 @@
-const { createServer } = require('node:http');
+require('dotenv').config();
+const express = require('express');
+const locationRoutes = require('./location'); // Import the location routes
 
-const hostname = '127.0.0.1';
-const port = 3000;
+const app = express();
+const PORT = 3000;
+const ADDRESS = '127.0.0.1'
 
-const server = createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World');
-});
+app.use(express.json());
 
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+// Use the routes defined in location.js
+app.use(locationRoutes);
+
+app.listen(PORT, () => {
+    console.log(`Server is running at ${ADDRESS} on port ${PORT}`);
 });

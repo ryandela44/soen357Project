@@ -67,6 +67,18 @@
     transition-duration: .5s;
 }
 
+.headerMenuIcon {
+    width: 50px;
+    height: 40px;
+    border-radius: 10%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(251, 251, 251);
+    transition-duration: .5s;
+}
+
+
 .headerIcon-size{
     width: 30px;
     height: 30px;
@@ -74,5 +86,10 @@
 
 .headerIcon:hover {
     background-color: #90e0ef;
+    transform: scale(1.1);
+}
+
+.headerMenuIcon:hover {
+    background-color: rgb(224, 224, 224);
     transform: scale(1.1);
 }

@@ -9,7 +9,9 @@ const Header = () => {
   return (
     <div className="header-container">
       <div className="logo-search-container gap-3">
+      <div className="headerMenuIcon">
         <AiOutlineMenu className="h-6 w-6" />
+        </div>
         <div className="logo-cont">
           <img src={logo} alt="logo" />
           <h1 className="text-lg font-semibold">DiscountFinder</h1>

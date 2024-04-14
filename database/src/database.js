@@ -18,6 +18,13 @@ const storeSchema = new Schema({
     items: [itemSchema]
 });
 
-const Store = mongoose.model('Store', storeSchema);
+const userSchema = new Schema({
+    email: { type: String, required: true, unique: true },
+    password: { type: String, required: true } // In a real application, this should be hashed
+});
 
-module.exports = Store;
+
+const Store = mongoose.model('Store', storeSchema);
+const User = mongoose.model('User', userSchema);
+
+module.exports = {Store,User};

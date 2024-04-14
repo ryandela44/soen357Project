@@ -49,3 +49,30 @@
 .search-container input:focus {
     outline:none;
 }
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap:25px;
+}
+
+.headerIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-color: #bde0fe;
+    transition-duration: .5s;
+}
+
+.headerIcon-size{
+    width: 30px;
+    height: 30px;
+}
+
+.headerIcon:hover {
+    background-color: #bde0fe;
+    transform: scale(1.1);
+}

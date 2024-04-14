@@ -67,7 +67,7 @@ function Login() {
             <div className="login-header">
                 <img src="/path-to-your-logo.png" alt="Logo" className="logo"/>
                 <div className="account-actions">
-                    <p>Already have an account?</p>
+                    <p>Don't have an account?</p>
                     <Link to="/signin" className="btn-signin">Sign Up</Link>
                 </div>
             </div>

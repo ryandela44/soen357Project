@@ -20,6 +20,7 @@ const Header = () => {
         </div>
 
         <div className="profile">
+          <h1>Username</h1> {/* add username here*/}
           <div className="headerIcon">
             <BiUser className="w-5 h-5"/>
           </div>

@@ -18,13 +18,13 @@
 .search-container {
     width: 414px;
     height: 41px;
-    background-color: #D3E888;
+    background-color: #ffd500;
     gap: 10px;
     border-radius: 20.5px;
     display: flex;
     align-items: center;
     padding-left: 16px;
-    color: #706868;
+    color: #023047;
 
 }
 
@@ -63,7 +63,7 @@
     display: grid;
     align-content: center;
     justify-content: center;
-    background-color: #bde0fe;
+    background-color: #48bfe3;
     transition-duration: .5s;
 }
 
@@ -73,6 +73,6 @@
 }
 
 .headerIcon:hover {
-    background-color: #bde0fe;
+    background-color: #48bfe3;
     transform: scale(1.1);
 }

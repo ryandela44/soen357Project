@@ -1,10 +1,14 @@
 require('dotenv').config();
 const express = require('express');
 const locationRoutes = require('./location'); // Import the location routes
-
+const connectToDatabase = require('../../database/src/config');
+//const populateDB = require('./populateDB')
 const app = express();
 const PORT = 3000;
 const ADDRESS = '127.0.0.1'
+
+connectToDatabase();
+//populateDB()
 
 app.use(express.json());
 

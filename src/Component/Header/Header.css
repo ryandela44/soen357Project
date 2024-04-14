@@ -17,9 +17,9 @@
 
 .search-container {
     width: 414px;
-    height: 41px;
-    background-color: #ffd500;
+    height: 46px;
     gap: 10px;
+    border-width: 1px ;
     border-radius: 20.5px;
     display: flex;
     align-items: center;
@@ -63,7 +63,7 @@
     display: grid;
     align-content: center;
     justify-content: center;
-    background-color: #48bfe3;
+    background-color: #90e0ef;
     transition-duration: .5s;
 }
 
@@ -73,6 +73,6 @@
 }
 
 .headerIcon:hover {
-    background-color: #48bfe3;
+    background-color: #90e0ef;
     transform: scale(1.1);
 }

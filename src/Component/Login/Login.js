@@ -68,7 +68,7 @@ function Login() {
                 <img src="/path-to-your-logo.png" alt="Logo" className="logo"/>
                 <div className="account-actions">
                     <p>Don't have an account?</p>
-                    <Link to="/signin" className="btn-signin">Sign Up</Link>
+                    <Link to="/signup" className="btn-signin">Sign Up</Link>
                 </div>
             </div>
             <h2 className="login-text">Login</h2>

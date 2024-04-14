@@ -1,0 +1,112 @@
+/* Ensures the body and html cover the full height and width, with no margin/padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.login-container {
+    background-color: #F2F2F2; /* Neutral Gray for background */
+    padding-top: 70px; /* Adds padding to top to prevent overlap with the fixed header */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to the start to work with the padding */
+}
+
+.login-header {
+    position: fixed; /* Fixes the header at the top */
+    top: 0; /* Positions the header at the top of the viewport */
+    left: 0; /* Aligns the header to the left */
+    width: 100%; /* Makes the header span the full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%; /* Provides padding inside the header */
+    background-color: #F2F2F2; /* Sets a contrasting background */
+    z-index: 1000; /* Ensures the header is above other content */
+}
+
+.logo {
+    max-width: 120px; /* Adjust based on actual logo size */
+}
+
+.account-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.account-actions p {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.btn-signin {
+    background-color: #0077CC; /* Primary Blue */
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-signin:hover {
+    background-color: #005699; /* Dark Blue for hover */
+}
+
+.login-text {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif; /* Using Montserrat for headers for better impact */
+    color: #0077CC; /* Text Color */
+    font-size: 28px; /* Increased font size */
+    font-weight: 600; /* Making it bolder */
+    text-align: center; /* Centering the header */
+    letter-spacing: 1px; /* Adding some letter spacing for a more open look */
+    margin-bottom: 20px; /* Adding bottom margin for spacing */
+}
+
+.login-box {
+    background-color: #FFFFFF; /* White background for the login box */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333; /* Text Color */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-btn {
+    background-color: #0077CC; /* Primary Blue */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #005699; /* Dark Blue for hover */
+}

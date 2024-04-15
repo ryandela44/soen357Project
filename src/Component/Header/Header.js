@@ -3,9 +3,11 @@ import "./Header.css";
 import logo from "../Assets/shopping-location-icon-vector.jpg";
 import { BiSearchAlt2, BiUser, BiCart } from "react-icons/bi";
 import { AiOutlineMenu } from "react-icons/ai";
+import { useUser } from '../UserContext/UserContext';
 
 
 const Header = () => {
+  const { user } = useUser();
   return (
     <div className="header-container">
       <div className="logo-search-container gap-3">
@@ -23,7 +25,7 @@ const Header = () => {
         </div>
 
         <div className="profile">
-          <h1>Username</h1> {/* add username here*/}
+          <h1>{user ? user.email : 'Username'}</h1> {/* Display user email or default text */}
           <div className="headerIcon">
             <BiUser className="w-5 h-5"/>
           </div>

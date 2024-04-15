@@ -3,10 +3,12 @@ import { Link, useNavigate } from "react-router-dom";
 import './Login.css';
 import axios from 'axios';
 import { toast } from 'react-toastify'; // Import toast
+import { useUser } from '../UserContext/UserContext';
 
 function Login() {
     const [credentials, setCredentials] = useState({ email: '', password: '' });
     const navigate = useNavigate();
+    const { setUser } = useUser();
 
     const handleChange = (event) => {
         const { name, value } = event.target;
@@ -17,6 +19,7 @@ function Login() {
         event.preventDefault();
         try {
             const response = await axios.post('http://localhost:3000/api/login', credentials);
+            setUser({ email: credentials.email }); // Save user email to context
             console.log(response.data); // Handle response accordingly
             navigate('/home'); // Navigate on successful login
         } catch (error) {

@@ -57,39 +57,26 @@ const Home = () => {
           <Card title="Fresh Produce" images={[oranges]} isCarousel={false} />
         </div>
       </div>
-      <div className="prod-row">
-      <h1 className="title-row">From Walmart</h1>
+      <div className="prod-row1">
+        <h1 className="title-row">Over 50% Off at Walmart</h1>
         <div className="cards-row">
-        <Card
-            images={[phone]} 
-            text="Samsung S8+ Phone"
-            isCarousel={false}
-          />
-          <Card
-            images={[broccoli]}
-            text="Broccoli"
-            isCarousel={false}
-          />
-          <Card
-            images={[ketchup]}
-            text="Heinz Ketchup"
-            isCarousel={false}
-          />
-          <Card
-            images={[dogfood]}
-            text="Dog Food"
-            isCarousel={false}
-          />
-          <Card
-            images={[limes]}
-            text="Green Limes"
-            isCarousel={false}
-          />
+          <Card images={[phone]} text="Samsung S8+ Phone" isCarousel={false} />
+          <Card images={[dogfood]} text="Dog Food" isCarousel={false} />
+          <Card images={[limes]} text="Green Limes" isCarousel={false} />
           <Card
             images={[macbook]}
             text="Macbook Pro 13 inch"
             isCarousel={false}
           />
+        </div>
+      </div>
+      <div className="prod-row2">
+        <h1 className="title-row">Over 30% Off at IGA</h1>
+        <div className="cards-row">
+          <Card images={[broccoli]} text="Broccoli" isCarousel={false} />
+          <Card images={[ketchup]} text="Heinz Ketchup" isCarousel={false} />
+          <Card images={[margarine]} text="Margarine" isCarousel={false} />
+
         </div>
       </div>
       <div className="footer">

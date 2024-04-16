@@ -84,7 +84,10 @@ const Home = () => {
 
         </div>
       </div>
-       <GoogleMapComponent onLocationSelect={handleLocationSelect} />
+      <div>
+        <h1 className="text-xl text-center">Nearby shops next to me</h1>
+        <GoogleMapComponent onLocationSelect={handleLocationSelect} />
+      </div>
       <div className="footer">
         <p>Copyright © 2024 DiscountFinder. All rights reserved.</p>
       </div>

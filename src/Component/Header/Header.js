@@ -32,7 +32,7 @@ const Header = () => {
                     </div>
                 )}
                 <div className="logo-cont">
-                    <img src={logo} alt="logo" />
+                    <img className="logo" src={logo} alt="logo" />
                 </div>
 
                 <div className={`search-container ${drawerOpen ? 'hide' : ''}`}>
@@ -71,7 +71,7 @@ const Header = () => {
                 </div>
 
                 <div className="profile">
-                    <h1>{'Welcome, ' + (user ? user.email : 'Username')}</h1> {/* Display user email or default text */}
+                    <h1 className="username-title">{'Welcome, ' + (user ? user.email : 'Username')}</h1> {/* Display user email or default text */}
                     <div className="headerIcon">
                         <BiUser className="w-5 h-5"/>
                     </div>

@@ -1,19 +1,35 @@
 /* Home.css */
 .home-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .cards-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    margin-left: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-left: 30px;
 }
 
 .header-container {
   margin-top: 20px;
   display: flex;
   justify-content: center;
+}
+
+.title-row {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  color: white;
+  background-color: #457b9d;
 }

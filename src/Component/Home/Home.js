@@ -10,12 +10,16 @@ import phone from "../Assets/Phone.jpg";
 import milk from "../Assets/milk.jpg";
 import macbook from "../Assets/macbook-air-m2-roundup-header.webp";
 import lipstick from "../Assets/revlon-dotcom-pdp-product-hero-lip-super-lustrous-lipstick-soldier-after-glow-309970226541-9x16.png";
+import oranges from "../Assets/oranges.jpg";
 
 const Home = () => {
   return (
     <div className="home-container">
       <div>
-      <Header className="header-container"/>
+        <Header className="header-container" />
+      </div>
+      <div className="title-row">
+        <h1>Exclusive Deals</h1>
       </div>
       <div className="cards-row">
         <Card
@@ -37,13 +41,15 @@ const Home = () => {
           isCarousel={false}
         />
       </div>
+      <h1 className="title-row">Categories</h1>
       <div className="cards-row">
         <Card title="Clothing" images={[redDress]} isCarousel={false} />
         <Card title="Groceries" images={[milk]} isCarousel={false} />
         <Card title="Electronics" images={[macbook]} isCarousel={false} />
         <Card title="Cosmetics" images={[lipstick]} isCarousel={false} />
+        <Card title="Fresh-Produce" images={[oranges]} isCarousel={false} />
       </div>
-      </div>
+    </div>
   );
 };
 

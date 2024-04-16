@@ -8,17 +8,29 @@ import { useUser } from '../UserContext/UserContext';
 const Header = () => {
     const { user } = useUser();
     const [drawerOpen, setDrawerOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     const toggleDrawer = () => {
         setDrawerOpen(!drawerOpen);
     };
 
+    const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+    };
+
+    React.useEffect(() => {
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <div className="header-container">
             <div className="logo-search-container gap-3">
-                <div className="headerMenuIcon" onClick={toggleDrawer}>
-                    <AiOutlineMenu className="h-6 w-6" />
-                </div>
+                {isMobile && (
+                    <div className="headerMenuIcon" onClick={toggleDrawer}>
+                        <AiOutlineMenu className="h-6 w-6" />
+                    </div>
+                )}
                 <div className="logo-cont">
                     <img src={logo} alt="logo" />
                     <h1 className="text-lg font-semibold">DiscountFinder</h1>

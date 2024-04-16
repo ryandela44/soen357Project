@@ -10,6 +10,19 @@
   gap: 20px;
   padding: 20px;
   margin-left: 30px;
+  margin-bottom: 30px;
+  
+}
+
+.deal-row {
+  margin-top: 30px;
+  color: white;
+  background-color: #004bad;
+}
+
+.cat-row {
+  color: black;
+  height: 60vh;
 }
 
 .header-container {
@@ -27,9 +40,20 @@
   margin-top: 20px;
   font-family: "Montserrat";
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   text-align: center;
+  
+}
+
+.footer {
+  height: 50px;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  background-color: #004bad;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
   color: white;
-  background-color: #457b9d;
 }

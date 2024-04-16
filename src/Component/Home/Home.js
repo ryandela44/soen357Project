@@ -18,36 +18,43 @@ const Home = () => {
       <div>
         <Header className="header-container" />
       </div>
-      <div className="title-row">
-        <h1>Exclusive Deals</h1>
+      <div className="deal-row">
+        <div className="title-row">
+          <h1>Exclusive Deals</h1>
+        </div>
+        <div className="cards-row">
+          <Card
+            title="Limited Time Offer"
+            images={[diapers, milk]} // Ensure it's an array
+            text="Popular sales"
+            isCarousel={false}
+          />
+          <Card
+            title="Discounts"
+            images={[margarine]} // Single image should also be in an array
+            text="Featured Sales"
+            isCarousel={false}
+          />
+          <Card
+            title="Clearances"
+            images={[phone]} // Single image should also be in an array
+            text="Featured Sales"
+            isCarousel={false}
+          />
+        </div>
       </div>
-      <div className="cards-row">
-        <Card
-          title="Limited Time Offer"
-          images={[diapers, milk]} // Ensure it's an array
-          text="Popular sales"
-          isCarousel={false}
-        />
-        <Card
-          title="Discounts"
-          images={[margarine]} // Single image should also be in an array
-          text="Featured Sales"
-          isCarousel={false}
-        />
-        <Card
-          title="Clearances"
-          images={[phone]} // Single image should also be in an array
-          text="Featured Sales"
-          isCarousel={false}
-        />
+      <div className="cat-row">
+        <h1 className="title-row">Categories</h1>
+        <div className="cards-row">
+          <Card title="Clothing" images={[redDress]} isCarousel={false} />
+          <Card title="Groceries" images={[milk]} isCarousel={false} />
+          <Card title="Electronics" images={[macbook]} isCarousel={false} />
+          <Card title="Cosmetics" images={[lipstick]} isCarousel={false} />
+          <Card title="Fresh Produce" images={[oranges]} isCarousel={false} />
+        </div>
       </div>
-      <h1 className="title-row">Categories</h1>
-      <div className="cards-row">
-        <Card title="Clothing" images={[redDress]} isCarousel={false} />
-        <Card title="Groceries" images={[milk]} isCarousel={false} />
-        <Card title="Electronics" images={[macbook]} isCarousel={false} />
-        <Card title="Cosmetics" images={[lipstick]} isCarousel={false} />
-        <Card title="Fresh-Produce" images={[oranges]} isCarousel={false} />
+      <div className="footer">
+        <p>Copyright © 2024 DiscountFinder. All rights reserved.</p>
       </div>
     </div>
   );

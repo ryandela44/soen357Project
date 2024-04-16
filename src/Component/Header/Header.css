@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
+  font-family: "Montserrat";
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .header-container img {
@@ -21,6 +25,7 @@
   gap: 10px;
   border-width: 1px;
   border-radius: 20.5px;
+  border-color: #023047;
   display: flex;
   align-items: center;
   padding-left: 16px;

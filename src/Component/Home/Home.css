@@ -15,6 +15,7 @@
 }
 
 .deal-row {
+  height: 60vh;
   margin-top: 30px;
   color: white;
   background-color: #004bad;
@@ -25,7 +26,7 @@
   height: 60vh;
 }
 
-.prod-row1 {
+.prod1-row {
   background-color: #e3e6e6;
 }
 
@@ -64,7 +65,7 @@
 
 .map-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 80vw;
   height: 400px;
   margin: 20px auto;
 }

@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import Header from "../Header/Header";
 import Card from "../Card/Card";
-import './Home.css';
+import "./Home.css";
 import diapers from "../Assets/Diapers.jpg";
 import redDress from "../Assets/redDress.jpg";
 import margarine from "../Assets/margarine.jpg";
@@ -18,75 +18,74 @@ import limes from "../Assets/limes.jpg";
 import GoogleMapComponent from "../GoogleMap/GoogleMapComponent";
 
 const Home = () => {
-    const handleLocationSelect = (lat, lng) => {
-        console.log("Selected Location:", lat, lng);
-    };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          autoplay: true,
+          autoplaySpeed: 5000,
+        },
+      },
+    ],
+  };
+  const handleLocationSelect = (lat, lng) => {
+    console.log("Selected Location:", lat, lng);
+  };
   return (
     <div className="home-container">
-      <div>
-        <Header className="header-container" />
-      </div>
+      <Header />
       <div className="deal-row">
-        <div className="title-row">
-          <h1>Exclusive Deals</h1>
-        </div>
+        <h1 className="title-row">Exclusive Deals</h1>
         <div className="cards-row">
           <Card
             title="Limited Time Offer"
-            images={[diapers, milk]} // Ensure it's an array
+            images={[diapers, milk]}
             text="Popular sales"
-            isCarousel={false}
           />
-          <Card
-            title="Discounts"
-            images={[margarine]} // Single image should also be in an array
-            text="Featured Sales"
-            isCarousel={false}
-          />
-          <Card
-            title="Clearances"
-            images={[phone]} // Single image should also be in an array
-            text="Featured Sales"
-            isCarousel={false}
-          />
+          <Card title="Discounts" images={[margarine]} text="Featured Sales" />
+          <Card title="Clearances" images={[phone]} text="Featured Sales" />
         </div>
       </div>
       <div className="cat-row">
         <h1 className="title-row">Categories</h1>
-        <div className="cards-row">
-          <Card title="Clothing" images={[redDress]} isCarousel={false} />
-          <Card title="Groceries" images={[milk]} isCarousel={false} />
-          <Card title="Electronics" images={[macbook]} isCarousel={false} />
-          <Card title="Cosmetics" images={[lipstick]} isCarousel={false} />
-          <Card title="Fresh Produce" images={[oranges]} isCarousel={false} />
-        </div>
+        <Slider {...settings}>
+          <Card title="Clothing" images={[redDress]} />
+          <Card title="Groceries" images={[milk]} />
+          <Card title="Electronics" images={[macbook]} />
+          <Card title="Cosmetics" images={[lipstick]} />
+          <Card title="Fresh Produce" images={[oranges]} />
+        </Slider>
       </div>
-      <div className="prod-row1">
+      <div className="prod1-row">
         <h1 className="title-row">Over 50% Off at Walmart</h1>
         <div className="cards-row">
-          <Card images={[phone]} text="Samsung S8+ Phone" isCarousel={false} />
-          <Card images={[dogfood]} text="Dog Food" isCarousel={false} />
-          <Card images={[limes]} text="Green Limes" isCarousel={false} />
-          <Card
-            images={[macbook]}
-            text="Macbook Pro 13 inch"
-            isCarousel={false}
-          />
+          <Card images={[phone]} text="Samsung S8+ Phone" />
+          <Card images={[dogfood]} text="Dog Food" />
+          <Card images={[limes]} text="Green Limes" />
+          <Card images={[macbook]} text="Macbook Pro 13 inch" />
         </div>
       </div>
-       
-      <div className="prod-row2">
+      <div className="prod2-row">
         <h1 className="title-row">Over 30% Off at IGA</h1>
         <div className="cards-row">
-          <Card images={[broccoli]} text="Broccoli" isCarousel={false} />
-          <Card images={[ketchup]} text="Heinz Ketchup" isCarousel={false} />
-          <Card images={[margarine]} text="Margarine" isCarousel={false} />
-
+          <Card images={[broccoli]} text="Broccoli" />
+          <Card images={[ketchup]} text="Heinz Ketchup" />
+          <Card images={[margarine]} text="Margarine" />
         </div>
       </div>
-      <div>
-        <h1 className="text-xl text-center">Nearby shops next to me</h1>
-        <GoogleMapComponent onLocationSelect={handleLocationSelect} />
+      <div className="mb-10">
+        <h1 className="pl-40 text-2xl">Find Your Nearby Shops</h1>
+      <GoogleMapComponent onLocationSelect={handleLocationSelect} />
       </div>
       <div className="footer">
         <p>Copyright © 2024 DiscountFinder. All rights reserved.</p>

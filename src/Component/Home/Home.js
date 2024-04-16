@@ -40,8 +40,11 @@ const settings = {
         }
     ]
 };
-
 const Home = () => {
+    const handleLocationSelect = (lat, lng) => {
+        console.log("Selected Location:", lat, lng);
+    };
+
     return (
         <div className="home-container">
             <Header />
@@ -80,7 +83,7 @@ const Home = () => {
                     <Card images={[margarine]} text="Margarine" />
                 </Slider>
             </div>
-            <GoogleMapComponent />
+            <GoogleMapComponent onLocationSelect={handleLocationSelect} />
             <div className="footer">
                 <p>Copyright © 2024 DiscountFinder. All rights reserved.</p>
             </div>

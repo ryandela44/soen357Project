@@ -63,7 +63,7 @@ const Home = () => {
                     <Card title="Fresh Produce" images={[oranges]} />
                 </Slider>
             </div>
-            <div className="prod-row1">
+            <div className="prod-row">
                 <h1 className="title-row">Over 50% Off at Walmart</h1>
                 <Slider {...settings}>
                     <Card images={[phone]} text="Samsung S8+ Phone" />
@@ -72,7 +72,7 @@ const Home = () => {
                     <Card images={[macbook]} text="Macbook Pro 13 inch" />
                 </Slider>
             </div>
-            <div className="prod-row2">
+            <div className="prod-row">
                 <h1 className="title-row">Over 30% Off at IGA</h1>
                 <Slider {...settings}>
                     <Card images={[broccoli]} text="Broccoli" />

@@ -62,3 +62,9 @@
   color: white;
 }
 
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 20px auto;
+}

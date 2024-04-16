@@ -1,0 +1,30 @@
+.left-column {
+    width: 25%;
+    padding: 20px;
+    background-color: #0077CC;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+}
+
+.left-column h2 {
+    margin-top: 0;
+}
+
+.left-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-column li {
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.left-column li:hover {
+    color: #FFCC00;
+}
+
+.left-column .selected {
+    font-weight: bold;
+}

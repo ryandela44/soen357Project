@@ -12,7 +12,7 @@
 .logo-search-container {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
 }
 
 .search-container {
@@ -54,6 +54,7 @@
     display: flex;
     align-items: center;
     gap:25px;
+    padding-left: 60px;
 }
 
 .headerIcon {

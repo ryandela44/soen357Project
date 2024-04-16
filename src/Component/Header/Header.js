@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
-import logo from "../Assets/shopping-location-icon-vector.jpg";
+import logo from "../Assets/logo.png";
 import { BiSearchAlt2, BiUser, BiCart } from "react-icons/bi";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useUser } from '../UserContext/UserContext';
@@ -33,7 +33,6 @@ const Header = () => {
                 )}
                 <div className="logo-cont">
                     <img src={logo} alt="logo" />
-                    <h1 className="text-lg font-semibold">DiscountFinder</h1>
                 </div>
 
                 <div className={`search-container ${drawerOpen ? 'hide' : ''}`}>
@@ -72,7 +71,7 @@ const Header = () => {
                 </div>
 
                 <div className="profile">
-                    <h1>{user ? user.email : 'Username'}</h1> {/* Display user email or default text */}
+                    <h1>{'Welcome, ' + (user ? user.email : 'Username')}</h1> {/* Display user email or default text */}
                     <div className="headerIcon">
                         <BiUser className="w-5 h-5"/>
                     </div>

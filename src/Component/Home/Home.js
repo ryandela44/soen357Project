@@ -14,7 +14,9 @@ import lipstick from "../Assets/revlon-dotcom-pdp-product-hero-lip-super-lustrou
 const Home = () => {
   return (
     <div className="home-container">
-      <Header />
+      <div>
+      <Header className="header-container"/>
+      </div>
       <div className="cards-row">
         <Card
           title="Limited Time Offer"
@@ -41,7 +43,7 @@ const Home = () => {
         <Card title="Electronics" images={[macbook]} isCarousel={false} />
         <Card title="Cosmetics" images={[lipstick]} isCarousel={false} />
       </div>
-    </div>
+      </div>
   );
 };
 

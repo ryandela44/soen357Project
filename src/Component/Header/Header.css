@@ -1,5 +1,4 @@
 .header-container {
-    margin: 8px 320px 0px 320px;
     display: flex;
     justify-content: space-between;
 }
@@ -92,4 +91,55 @@
 .headerMenuIcon:hover {
     background-color: rgb(224, 224, 224);
     transform: scale(1.1);
+}
+
+.navbar ul {
+    display: flex;
+    height: 100%;
+    gap: 20px;
+    font-weight: 600;
+    color: #434343;
+}
+
+@media screen and (max-width: 768px) {
+    .logo-search-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .search-container {
+        flex-basis: 100%;
+        margin-top: 20px;
+        order: 1;
+    }
+
+    .search-container.hide {
+        display: none;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        height: 100vh;
+        width: 70%;
+        max-width: 300px;
+        padding: 80px 20px 20px;
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-weight: 600;
+        color: #434343;
+    }
+
+    .navbar.open {
+        transform: translateX(0);
+    }
 }

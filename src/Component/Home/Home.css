@@ -25,6 +25,10 @@
   height: 60vh;
 }
 
+.prod-row {
+  background-color: #e3e6e6;
+}
+
 .header-container {
   margin-top: 20px;
   display: flex;
@@ -57,3 +61,4 @@
   font-style: normal;
   color: white;
 }
+

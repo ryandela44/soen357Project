@@ -11,6 +11,10 @@ import milk from "../Assets/milk.jpg";
 import macbook from "../Assets/macbook-air-m2-roundup-header.webp";
 import lipstick from "../Assets/revlon-dotcom-pdp-product-hero-lip-super-lustrous-lipstick-soldier-after-glow-309970226541-9x16.png";
 import oranges from "../Assets/oranges.jpg";
+import dogfood from "../Assets/Dog Food.jpg";
+import broccoli from "../Assets/broccoli.jpg";
+import ketchup from "../Assets/ketchup.jpg";
+import limes from "../Assets/limes.jpg";
 
 const Home = () => {
   return (
@@ -51,6 +55,41 @@ const Home = () => {
           <Card title="Electronics" images={[macbook]} isCarousel={false} />
           <Card title="Cosmetics" images={[lipstick]} isCarousel={false} />
           <Card title="Fresh Produce" images={[oranges]} isCarousel={false} />
+        </div>
+      </div>
+      <div className="prod-row">
+      <h1 className="title-row">From Walmart</h1>
+        <div className="cards-row">
+        <Card
+            images={[phone]} 
+            text="Samsung S8+ Phone"
+            isCarousel={false}
+          />
+          <Card
+            images={[broccoli]}
+            text="Broccoli"
+            isCarousel={false}
+          />
+          <Card
+            images={[ketchup]}
+            text="Heinz Ketchup"
+            isCarousel={false}
+          />
+          <Card
+            images={[dogfood]}
+            text="Dog Food"
+            isCarousel={false}
+          />
+          <Card
+            images={[limes]}
+            text="Green Limes"
+            isCarousel={false}
+          />
+          <Card
+            images={[macbook]}
+            text="Macbook Pro 13 inch"
+            isCarousel={false}
+          />
         </div>
       </div>
       <div className="footer">

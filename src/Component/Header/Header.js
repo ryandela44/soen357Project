@@ -8,14 +8,14 @@ import { useUser } from '../UserContext/UserContext';
 const Header = () => {
     const { user } = useUser();
     const [drawerOpen, setDrawerOpen] = useState(false);
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1080);
 
     const toggleDrawer = () => {
         setDrawerOpen(!drawerOpen);
     };
 
     const handleResize = () => {
-        setIsMobile(window.innerWidth <= 768);
+        setIsMobile(window.innerWidth <= 1080);
     };
 
     React.useEffect(() => {

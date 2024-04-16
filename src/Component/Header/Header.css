@@ -1,5 +1,4 @@
 .header-container {
-    margin: 8px 320px 0px 320px;
     display: flex;
     justify-content: space-between;
 }
@@ -92,4 +91,12 @@
 .headerMenuIcon:hover {
     background-color: rgb(224, 224, 224);
     transform: scale(1.1);
+}
+
+.navbar ul {
+    display: flex;
+    height: 100%;
+    gap: 20px;
+    font-weight: 600;
+    color: #434343;
 }

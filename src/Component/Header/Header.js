@@ -24,6 +24,36 @@ const Header = () => {
           <input type="text" placeholder="Enter a product" />
         </div>
 
+        <div className="navbar">
+          <ul>
+            <li>
+              <div className="list-cont">
+                <a href="#">Home</a>
+              </div>
+            </li>
+            <li>
+              <div className="list-cont">
+                <a href="#">Shops</a>
+              </div>
+            </li>
+            <li>
+              <div className="list-cont">
+                <a href="#">Discounts</a>
+              </div>
+            </li>
+            <li>
+              <div className="list-cont">
+                <a href="#">Blog</a>
+              </div>
+            </li>
+            <li>
+              <div className="list-cont">
+                <a href="#">Contact</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
         <div className="profile">
           <h1>{user ? user.email : 'Username'}</h1> {/* Display user email or default text */}
           <div className="headerIcon">

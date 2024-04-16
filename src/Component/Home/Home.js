@@ -1,8 +1,8 @@
-// Home.js
 import React from "react";
+import Slider from "react-slick";
 import Header from "../Header/Header";
 import Card from "../Card/Card";
-import "./Home.css";
+import './Home.css';
 import diapers from "../Assets/Diapers.jpg";
 import redDress from "../Assets/redDress.jpg";
 import margarine from "../Assets/margarine.jpg";

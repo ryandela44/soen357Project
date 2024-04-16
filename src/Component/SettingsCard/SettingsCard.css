@@ -1,0 +1,88 @@
+/* Main Settings Card Styling */
+.settings-card {
+    background-color: #fff; /* White background for clarity */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px; /* Spacing inside the card */
+    font-family: 'Open Sans', sans-serif; /* Consistent font throughout the settings */
+    color: #333333; /* Sufficient contrast for readability */
+    margin-bottom: 20px; /* Space between multiple cards or elements */
+}
+
+/* Heading styles within the card for clear section demarcation */
+.settings-card h2 {
+    margin-top: 0;
+    margin-bottom: 16px; /* More space below the main title */
+    font-size: 1.5rem; /* Larger font for main headings */
+    color: #0077CC; /* Primary blue for prominence */
+    font-family: 'Montserrat', sans-serif; /* Stylish, modern font for headings */
+}
+
+.settings-card h3 {
+    font-size: 1.2rem; /* Slightly smaller font for subsections */
+    color: #33BBFF; /* Accent blue for sub-headings */
+    margin-top: 20px; /* Space above sub-headings for better separation */
+    margin-bottom: 10px; /* Less space below to group subsection content */
+}
+
+/* Styling for individual input groups within settings */
+.settings-input-group {
+    margin-bottom: 20px; /* Space between each input group */
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+}
+
+.settings-input-group label {
+    font-weight: bold; /* Emphasize the label */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+.settings-input-group input[type="text"],
+.settings-input-group input[type="email"],
+.settings-input-group input[type="number"],
+.settings-input-group input[type="password"],
+.settings-input-group select {
+    padding: 8px; /* Padding for comfort */
+    border: 2px solid #33BBFF; /* Accent blue border for focus */
+    border-radius: 4px; /* Rounded edges on inputs */
+    outline: none; /* Remove default focus outline */
+    width: 100%;
+}
+
+.settings-input-group input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+.settings-input-group select {
+    cursor: pointer; /* Indicate that select is a dropdown */
+}
+
+/* Button specific styles for actions within settings */
+.settings-card button {
+    width: auto; /* Adjust width according to content rather than full width */
+    padding: 10px 15px; /* Comfortable padding */
+    margin-top: 10px; /* Space above button */
+    background-color: #0077CC; /* Primary blue for buttons */
+    color: white; /* Contrast text color for readability */
+    border: none; /* No border for a cleaner look */
+    border-radius: 5px; /* Consistent rounded edges */
+    cursor: pointer; /* Indicate clickable */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.settings-card button:hover {
+    background-color: #005699; /* Dark blue on hover for effect */
+}
+
+/* Ensure content is accessible and legible on smaller screens */
+@media (max-width: 768px) {
+    .settings-card {
+        padding: 15px; /* Slightly less padding on smaller screens */
+        border-radius: 8px; /* Adjust border-radius for smaller elements */
+    }
+
+    .settings-card h2, .settings-card h3 {
+        margin-top: 10px; /* Less space on smaller screens */
+    }
+}

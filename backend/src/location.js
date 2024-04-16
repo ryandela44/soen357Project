@@ -25,4 +25,12 @@ router.get('/findShops', (req, res) => {
     });
 });
 
+router.post('/updateRadius', (req, res) => {
+    const { radius } = req.body;
+    // Store the radius in your database or server memory as needed
+    console.log(`Radius updated to: ${radius}`); // Just logging, implement database schema later
+    res.json({ radius });
+});
+
+
 module.exports = router; // Export the router

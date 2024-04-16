@@ -15,8 +15,12 @@ import dogfood from "../Assets/Dog Food.jpg";
 import broccoli from "../Assets/broccoli.jpg";
 import ketchup from "../Assets/ketchup.jpg";
 import limes from "../Assets/limes.jpg";
+import GoogleMapComponent from "../GoogleMap/GoogleMapComponent";
 
 const Home = () => {
+    const handleLocationSelect = (lat, lng) => {
+        console.log("Selected Location:", lat, lng);
+    };
   return (
     <div className="home-container">
       <div>
@@ -92,6 +96,7 @@ const Home = () => {
           />
         </div>
       </div>
+        <GoogleMapComponent onLocationSelect={handleLocationSelect} />
       <div className="footer">
         <p>Copyright © 2024 DiscountFinder. All rights reserved.</p>
       </div>

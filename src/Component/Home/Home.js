@@ -53,6 +53,8 @@ const Home = () => {
     const handleCardClick = (product) => {
         console.log("Product clicked:", product);
         setSelectedProduct(product);
+        const url = `https://www.walmart.com`;
+        window.open(url, '_blank');
     };
 
     const handleLocationSelect = (lat, lng) => {

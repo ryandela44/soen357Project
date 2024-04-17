@@ -15,8 +15,9 @@
 }
 
 .deal-row {
-  height: 60vh;
+  height: 500px;
   margin-top: 30px;
+  margin-bottom: 30px;
   color: white;
   background-color: #004bad;
 }
@@ -24,10 +25,17 @@
 .cat-row {
   color: black;
   height: 60vh;
+  margin-bottom: 30px;
 }
 
 .prod1-row {
   background-color: #e3e6e6;
+  height: 60vh;
+  margin-bottom: 30px;
+}
+
+.prod2-row {
+  margin-bottom: 30px;
 }
 
 .header-container {

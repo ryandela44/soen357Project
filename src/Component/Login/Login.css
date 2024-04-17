@@ -1,37 +1,29 @@
-/* Ensures the body and html cover the full height and width, with no margin/padding */
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
-}
-
-.login-container {
-    background-color: #F2F2F2; /* Neutral Gray for background */
-    padding-top: 70px; /* Adds padding to top to prevent overlap with the fixed header */
+/* More specific selector for the login container */
+div.login-container {
+    background-color: #ffffff; /* This sets the background to a blue color */
+    padding-top: 70px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Aligns content to the start to work with the padding */
+    justify-content: flex-start;
 }
 
-.login-header {
-    position: fixed; /* Fixes the header at the top */
-    top: 0; /* Positions the header at the top of the viewport */
-    left: 0; /* Aligns the header to the left */
-    width: 100%; /* Makes the header span the full width */
+div.login-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 10%; /* Provides padding inside the header */
-    background-color: #F2F2F2; /* Sets a contrasting background */
-    z-index: 1000; /* Ensures the header is above other content */
+    padding: 10px 10%;
+    background-color: #ffffff;
+    z-index: 1000;
 }
 
 .logo {
-    max-width: 120px; /* Adjust based on actual logo size */
+    max-width: 120px;
 }
 
 .account-actions {
@@ -47,7 +39,7 @@ body, html {
 }
 
 .btn-signin {
-    background-color: #0077CC; /* Primary Blue */
+    background-color: #0077CC;
     color: white;
     padding: 8px 16px;
     border-radius: 5px;
@@ -55,22 +47,22 @@ body, html {
 }
 
 .btn-signin:hover {
-    background-color: #005699; /* Dark Blue for hover */
+    background-color: #005699;
 }
 
 .login-text {
     padding: 20px;
-    font-family: 'Montserrat', sans-serif; /* Using Montserrat for headers for better impact */
-    color: #0077CC; /* Text Color */
-    font-size: 28px; /* Increased font size */
-    font-weight: 600; /* Making it bolder */
-    text-align: center; /* Centering the header */
-    letter-spacing: 1px; /* Adding some letter spacing for a more open look */
-    margin-bottom: 20px; /* Adding bottom margin for spacing */
+    font-family: 'Montserrat', sans-serif;
+    color: #0077CC;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
 }
 
 .login-box {
-    background-color: #FFFFFF; /* White background for the login box */
+    background-color: #FFFFFF;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -86,7 +78,7 @@ body, html {
     display: block;
     margin-bottom: 5px;
     font-family: 'Open Sans', sans-serif;
-    color: #333333; /* Text Color */
+    color: #333;
 }
 
 .input-group input {
@@ -98,8 +90,8 @@ body, html {
 }
 
 .login-btn {
-    background-color: #0077CC; /* Primary Blue */
-    color: #FFFFFF;
+    background-color: #0077CC;
+    color: white;
     border: none;
     padding: 10px 20px;
     width: 100%;
@@ -108,5 +100,19 @@ body, html {
 }
 
 .login-btn:hover {
-    background-color: #005699; /* Dark Blue for hover */
+    background-color: #005699;
+}
+
+.forgot-password-link {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.forgot-password {
+    color: #0077CC;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
 }

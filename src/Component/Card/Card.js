@@ -1,8 +1,8 @@
 import React from 'react';
-import Slider from "react-slick";
 import './Card.css';
+import Slider from "react-slick";
 
-const Card = ({ title, images, text, isCarousel }) => {
+const Card = ({ title, images, text, isCarousel, price, name, onClick, originalPrice }) => {
     const settings = {
         dots: true,
         infinite: true,
@@ -14,7 +14,7 @@ const Card = ({ title, images, text, isCarousel }) => {
     };
 
     return (
-        <div className="card">
+        <div className="card" onClick={() => onClick({ title, images, price, name, text })}>
             <h3 className="card-title">{title}</h3>
             {isCarousel && images.length > 0 ? (
                 <Slider {...settings}>
@@ -29,6 +29,14 @@ const Card = ({ title, images, text, isCarousel }) => {
             )}
             <div className="card-content">
                 {text && <p className="card-text">{text}</p>}
+                <p className="card-name">{name}</p>
+                {originalPrice ? (
+                    <p className="card-price">
+                        <span className="original-price">{originalPrice}</span> {price}
+                    </p>
+                ) : (
+                    <p className="card-price">{price}</p>
+                )}
             </div>
         </div>
     );

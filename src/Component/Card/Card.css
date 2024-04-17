@@ -48,3 +48,16 @@
   color: #666;
   text-align: center;
 }
+
+.card-name,
+.card-price {
+  font-size: 1em;
+  color: #333;
+  text-align: center;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #777;
+  margin-right: 5px;
+}

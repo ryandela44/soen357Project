@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./SettingsCard.css";
 
-const SettingsCard = ({ selectedSetting, isCardOpen}) => {
+const SettingsCard = ({ selectedSetting, isCardOpen }) => {
     const [radius, setRadius] = useState('');
 
     const handleRadiusChange = (event) => {
@@ -47,12 +47,16 @@ const SettingsCard = ({ selectedSetting, isCardOpen}) => {
                     <div>
                         <h3>Notification Settings</h3>
                         <div className="settings-input-group">
-                            <label>Email Notifications:</label>
-                            <input type="checkbox" /> Enable
+                            <div className="checkbox-group">
+                                <label>Email Notifications:</label>
+                                Enable <input type="checkbox" /> 
+                            </div>
                         </div>
                         <div className="settings-input-group">
-                            <label>Push Notifications:</label>
-                            <input type="checkbox" /> Enable
+                            <div className="checkbox-group">
+                                <label>Push Notifications:</label>
+                                Enable <input type="checkbox" /> 
+                            </div>
                         </div>
                     </div>
                 );
@@ -69,8 +73,10 @@ const SettingsCard = ({ selectedSetting, isCardOpen}) => {
                             </select>
                         </div>
                         <div className="settings-input-group">
-                            <label>Search Engine Indexing:</label>
-                            <input type="checkbox" /> Allow
+                            <div className="checkbox-group">
+                                <label>Search Engine Indexing:</label>
+                                Allow <input type="checkbox" /> 
+                            </div>
                         </div>
                     </div>
                 );

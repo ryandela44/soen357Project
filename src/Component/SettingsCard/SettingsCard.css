@@ -71,6 +71,16 @@
     transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
+.settings-card .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.settings-card .checkbox-group label {
+    margin-right: 10px; /* Add some space between label and checkbox */
+}
+
 .settings-card button:hover {
     background-color: #005699; /* Dark blue on hover for effect */
 }

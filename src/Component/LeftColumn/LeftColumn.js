@@ -6,7 +6,7 @@ const LeftColumn = ({ selectedSetting, onSettingSelect }) => {
 
     return (
         <div className="left-column">
-            <h2>Settings</h2>
+            <h2 className="font-bold text-2xl mb-5">Settings</h2>
             <ul>
                 {settings.map((setting) => (
                     <li

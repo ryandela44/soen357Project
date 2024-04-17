@@ -18,15 +18,26 @@
   margin-top: 30px;
   color: white;
   background-color: #004bad;
+  height: 500px;
 }
 
 .cat-row {
+  margin: 10px;
   color: black;
-  height: 60vh;
+  height: 450px;
+  margin-bottom: 30px;
 }
 
-.prod-row1 {
+.prod1-row {
+  margin-bottom: 30px;
+  height: 450px;
   background-color: #e3e6e6;
+}
+
+.prod2-row {
+  margin-bottom: 20px;
+  height: 450px;
+
 }
 
 .header-container {
@@ -51,7 +62,7 @@
 }
 
 .footer {
-  height: 50px;
+  height: 80px;
   display: flex;
   justify-content:center ;
   align-items: center;

@@ -142,7 +142,7 @@ const Home = () => {
                     />
                 </Slider>
             </div>
-            <div className="prod-row">
+            <div className="prod1-row">
                 <h1 className="title-row">Over 50% Off at Walmart</h1>
                 <Slider {...settings}>
                     <Card
@@ -179,7 +179,7 @@ const Home = () => {
                     />
                 </Slider>
             </div>
-            <div className="prod-row">
+            <div className="prod2-row">
                 <h1 className="title-row">Over 30% Off at IGA</h1>
                 <Slider {...settings}>
                     <Card

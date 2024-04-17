@@ -4,6 +4,8 @@ import logo from "../Assets/logo.png";
 import { BiSearchAlt2, BiUser, BiCart } from "react-icons/bi";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useUser } from '../UserContext/UserContext';
+import { useNavigate } from 'react-router-dom';
+
 
 const Header = () => {
     const { user } = useUser();
@@ -22,6 +24,13 @@ const Header = () => {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
+
+    const navigate = useNavigate();
+
+    const handleSettingsNavigation = () => {
+        navigate('/settings');
+    };
+
 
     return (
         <div className="header-container">
@@ -44,27 +53,27 @@ const Header = () => {
                     <ul>
                         <li>
                             <div className="list-cont">
-                                <a href="#">Home</a>
+                                <a href="/home">Home</a>
                             </div>
                         </li>
                         <li>
                             <div className="list-cont">
-                                <a href="#">Shops</a>
+                                <a href="/shops">Shops</a>
                             </div>
                         </li>
                         <li>
                             <div className="list-cont">
-                                <a href="#">Discounts</a>
+                                <a href="/discounts">Discounts</a>
                             </div>
                         </li>
                         <li>
                             <div className="list-cont">
-                                <a href="#">Blog</a>
+                                <a href="/blog">Blog</a>
                             </div>
                         </li>
                         <li>
                             <div className="list-cont">
-                                <a href="#">Contact</a>
+                                <a href="/contact">Contact</a>
                             </div>
                         </li>
                     </ul>
@@ -72,10 +81,9 @@ const Header = () => {
 
                 <div className="profile">
                     <h1 className="username-title">{'Welcome, ' + (user ? user.email : 'Username')}</h1> {/* Display user email or default text */}
-                    <div className="headerIcon">
+                    <div className="headerIcon" onClick={handleSettingsNavigation}>
                         <BiUser className="w-5 h-5"/>
                     </div>
-
                     <div className="headerIcon">
                         <BiCart className="w-5 h-5"/>
                     </div>

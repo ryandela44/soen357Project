@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './SignUp.css';
 import { toast } from 'react-toastify';
+import logo from "../Assets/logo.png";
 
 function SignUp() {
     const [credentials, setCredentials] = useState({ email: '', password: '', confirmPassword: '' });
@@ -36,7 +37,7 @@ function SignUp() {
         <div className="login-container">
             {/* Similar layout and classes as the Login component */}
             <div className="login-header">
-                <img src="/path-to-your-logo.png" alt="Logo" className="logo"/>
+                <img src={logo} alt="Logo" className="logo"/>
                 <div className="account-actions">
                     <p>Already have an account?</p>
                     <Link to="/login" className="btn-signin">Log In</Link>

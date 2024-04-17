@@ -80,7 +80,7 @@ const Header = () => {
                 </div>
 
                 <div className="profile">
-                    <h1 className="username-title">{'Welcome, ' + (user ? user.email : 'Username')}</h1> {/* Display user email or default text */}
+                    <h1 className="username-title">{'Welcome, ' + (user ? user.email : 'User')}</h1> {/* Display user email or default text */}
                     <div className="headerIcon" onClick={handleSettingsNavigation}>
                         <BiUser className="w-5 h-5"/>
                     </div>

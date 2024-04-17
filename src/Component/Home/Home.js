@@ -53,7 +53,7 @@ const Home = () => {
     const handleCardClick = (product) => {
         console.log("Product clicked:", product);
         setSelectedProduct(product);
-        const url = `https://www.walmart.com`;
+        const url = product.url;
         window.open(url, '_blank');
     };
 
@@ -75,7 +75,7 @@ const Home = () => {
                         price="$15.99"
                         originalPrice="$19.99"
                         name="Huggies Diapers"
-                        onClick={() => handleCardClick({ title: "Huggies Diapers", images: [diapers], price: "$15.99", originalPrice: "$19.99", description: "Special discount on bulk purchase." })}
+                        onClick={() => handleCardClick({ title: "Huggies Diapers", images: [diapers], price: "$15.99", originalPrice: "$19.99", description: "Special discount on bulk purchase.", url:"https://www.walmart.com" })}
                     />
                     <Card
                         title="Discounts"
@@ -85,7 +85,7 @@ const Home = () => {
                         price="$5.99"
                         originalPrice="$11.98"
                         name="Margarine Tub"
-                        onClick={() => handleCardClick({ title: "Margarine Tub", images: [margarine], price: "$5.99", originalPrice: "$11.98", description: "Buy one get one free offer." })}
+                        onClick={() => handleCardClick({ title: "Margarine Tub", images: [margarine], price: "$5.99", originalPrice: "$11.98", description: "Buy one get one free offer.", url:"https://www.walmart.com" })}
                     />
                     <Card
                         title="Clearances"
@@ -95,7 +95,7 @@ const Home = () => {
                         price="$299.99"
                         originalPrice="$499.99"
                         name="Samsung S8+ Phone"
-                        onClick={() => handleCardClick({ title: "Samsung S8+ Phone", images: [phone], price: "$299.99", originalPrice: "$499.99", description: "Clearance sale, while stocks last." })}
+                        onClick={() => handleCardClick({ title: "Samsung S8+ Phone", images: [phone], price: "$299.99", originalPrice: "$499.99", description: "Clearance sale, while stocks last.", url:"https://www.walmart.com" })}
                     />
                 </Slider>
             </div>
@@ -108,7 +108,7 @@ const Home = () => {
                         name="Red Evening Dress"
                         price="$89.99"
                         originalPrice="$129.99"
-                        onClick={() => handleCardClick({ title: "Red Evening Dress", images: [redDress], price: "$89.99", originalPrice: "$129.99", description: "Stylish evening wear." })}
+                        onClick={() => handleCardClick({ title: "Red Evening Dress", images: [redDress], price: "$89.99", originalPrice: "$129.99", description: "Stylish evening wear.", url:"https://www.walmart.com" })}
                     />
                     <Card
                         title="Groceries"
@@ -116,7 +116,7 @@ const Home = () => {
                         name="Organic Milk"
                         price="$2.49"
                         originalPrice="$2.99"
-                        onClick={() => handleCardClick({ title: "Organic Milk", images: [milk], price: "$2.49", originalPrice: "$2.99", description: "Fresh organic milk." })}
+                        onClick={() => handleCardClick({ title: "Organic Milk", images: [milk], price: "$2.49", originalPrice: "$2.99", description: "Fresh organic milk.", url:"https://west.iga.ca/" })}
                     />
                     <Card
                         title="Electronics"
@@ -124,7 +124,7 @@ const Home = () => {
                         name="Macbook Pro 13 inch"
                         price="$1199.99"
                         originalPrice="$1399.99"
-                        onClick={() => handleCardClick({ title: "Macbook Pro 13 inch", images: [macbook], price: "$1199.99", originalPrice: "$1399.99", description: "Latest model with M2 chip." })}
+                        onClick={() => handleCardClick({ title: "Macbook Pro 13 inch", images: [macbook], price: "$1199.99", originalPrice: "$1399.99", description: "Latest model with M2 chip.", url:"https://www.walmart.com" })}
                     />
                     <Card
                         title="Cosmetics"
@@ -132,7 +132,7 @@ const Home = () => {
                         name="Super Lustrous Lipstick"
                         price="$7.99"
                         originalPrice="$9.99"
-                        onClick={() => handleCardClick({ title: "Super Lustrous Lipstick", images: [lipstick], price: "$7.99", originalPrice: "$9.99", description: "Rich color, smooth application." })}
+                        onClick={() => handleCardClick({ title: "Super Lustrous Lipstick", images: [lipstick], price: "$7.99", originalPrice: "$9.99", description: "Rich color, smooth application.", url:"https://www.walmart.com" })}
                     />
                     <Card
                         title="Fresh Produce"
@@ -140,7 +140,7 @@ const Home = () => {
                         name="Fresh Oranges"
                         price="$4.49"
                         originalPrice="$4.99"
-                        onClick={() => handleCardClick({ title: "Fresh Oranges", images: [oranges], price: "$4.49", originalPrice: "$4.99", description: "Sweet and juicy oranges." })}
+                        onClick={() => handleCardClick({ title: "Fresh Oranges", images: [oranges], price: "$4.49", originalPrice: "$4.99", description: "Sweet and juicy oranges.", url:"https://west.iga.ca/" })}
                     />
                 </Slider>
             </div>
@@ -153,7 +153,7 @@ const Home = () => {
                         price="$299.99"
                         originalPrice="$599.99"
                         name="Samsung Galaxy S9"
-                        onClick={() => handleCardClick({ title: "Samsung Galaxy S9", images: [phone], price: "$299.99", originalPrice: "$599.99", description: "Special clearance event pricing." })}
+                        onClick={() => handleCardClick({ title: "Samsung Galaxy S9", images: [phone], price: "$299.99", originalPrice: "$599.99", description: "Special clearance event pricing.", url:"https://www.walmart.com" })}
                     />
                     <Card
                         images={[dogfood]}
@@ -161,7 +161,7 @@ const Home = () => {
                         price="$19.99"
                         originalPrice="$39.99"
                         name="Premium Dog Food"
-                        onClick={() => handleCardClick({ title: "Premium Dog Food", images: [dogfood], price: "$19.99", originalPrice: "$39.99", description: "20 lbs bag of premium dog food." })}
+                        onClick={() => handleCardClick({ title: "Premium Dog Food", images: [dogfood], price: "$19.99", originalPrice: "$39.99", description: "20 lbs bag of premium dog food.", url:"https://www.walmart.com" })}
                     />
                     <Card
                         images={[limes]}
@@ -169,7 +169,7 @@ const Home = () => {
                         price="$0.99"
                         originalPrice="$1.99"
                         name="Organic Limes"
-                        onClick={() => handleCardClick({ title: "Organic Limes", images: [limes], price: "$0.99", originalPrice: "$1.99", description: "Fresh organic limes on sale." })}
+                        onClick={() => handleCardClick({ title: "Organic Limes", images: [limes], price: "$0.99", originalPrice: "$1.99", description: "Fresh organic limes on sale.", url:"https://www.walmart.com" })}
                     />
                     <Card
                         images={[macbook]}
@@ -177,7 +177,7 @@ const Home = () => {
                         price="$999.99"
                         originalPrice="$1299.99"
                         name="Macbook Air"
-                        onClick={() => handleCardClick({ title: "Macbook Air", images: [macbook], price: "$999.99", originalPrice: "$1299.99", description: "Lightweight, powerful and affordable." })}
+                        onClick={() => handleCardClick({ title: "Macbook Air", images: [macbook], price: "$999.99", originalPrice: "$1299.99", description: "Lightweight, powerful and affordable.", url:"https://www.walmart.com" })}
                     />
                 </Slider>
             </div>
@@ -190,7 +190,7 @@ const Home = () => {
                         price="$0.99"
                         originalPrice="$1.49"
                         name="Fresh Broccoli"
-                        onClick={() => handleCardClick({ title: "Fresh Broccoli", images: [broccoli], price: "$0.99", originalPrice: "$1.49", description: "Organically grown fresh broccoli." })}
+                        onClick={() => handleCardClick({ title: "Fresh Broccoli", images: [broccoli], price: "$0.99", originalPrice: "$1.49", description: "Organically grown fresh broccoli.", url:"https://west.iga.ca/" })}
                     />
                     <Card
                         images={[ketchup]}
@@ -198,7 +198,7 @@ const Home = () => {
                         price="$2.99"
                         originalPrice="$3.99"
                         name="Heinz Ketchup"
-                        onClick={() => handleCardClick({ title: "Heinz Ketchup", images: [ketchup], price: "$2.99", originalPrice: "$3.99", description: "Classic Heinz ketchup." })}
+                        onClick={() => handleCardClick({ title: "Heinz Ketchup", images: [ketchup], price: "$2.99", originalPrice: "$3.99", description: "Classic Heinz ketchup.", url:"https://west.iga.ca/" })}
                     />
                     <Card
                         images={[margarine]}
@@ -206,7 +206,7 @@ const Home = () => {
                         price="$1.99"
                         originalPrice="$2.99"
                         name="Butter Substitute"
-                        onClick={() => handleCardClick({ title: "Butter Substitute", images: [margarine], price: "$1.99", originalPrice: "$2.99", description: "Healthy margarine alternative." })}
+                        onClick={() => handleCardClick({ title: "Butter Substitute", images: [margarine], price: "$1.99", originalPrice: "$2.99", description: "Healthy margarine alternative.", url:"https://west.iga.ca/" })}
                     />
                 </Slider>
             </div>

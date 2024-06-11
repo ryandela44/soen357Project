@@ -6,12 +6,12 @@ Discount Finder is a web application designed to help users locate discounts in 
 
 ## Team Members
 
-- **Bilal Yattou** - 40110820
-- **Ferdous Hasnat** - 40112912
-- **Aman Nihaal Nuckchady** - 40249877
-- **Yvon Ryan Wetie Mougang** - 40129382
-- **Sabari Krishna Orakkan** - 40079144
-- **Philippe Bertrand** - 40157540
+- **Bilal Yattou**
+- **Ferdous Hasnat**
+- **Aman Nihaal Nuckchady** 
+- **Yvon Ryan Wetie Mougang** 
+- **Sabari Krishna Orakkan** 
+- **Philippe Bertrand**
 
 ## Key Features
 
